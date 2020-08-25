@@ -1,0 +1,45 @@
+@import "norm.css";
+ .h1_alternative:first-child{
+    color:red;
+}
+.h1{
+    color:green !important;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.flex_wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.wrap{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+/* для телефонов */
+@media screen and (max-width: 600px){
+    .flex_wrapper{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+/* для планшетов */
+@media screen and (min-width: 600px) and (max-width: 1100px){
+    .flex_wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    
+    }
+    .wrap{
+        width: 100px;
+        background-color: blue;
+        font-size: 12px;
+        color:white;
+    }
+}
